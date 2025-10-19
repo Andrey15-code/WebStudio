@@ -1,0 +1,186 @@
+.logo {
+  width: 1600px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px;
+  margin-left: 100px;
+}
+
+.logo-web {
+  color: #2196f3;
+  font-size: 26px;
+  font-family: "Raleway", sans-serif;
+}
+
+.logo-studio {
+  color: #2f303a;
+  font-size: 26px;
+  font-family: "Raleway", sans-serif;
+}
+
+.info {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  color: #757575;
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.info a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.2s;
+}
+
+.info a:hover {
+  color: #2196f3;
+}
+
+.nav {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: black;
+  color: lightblue;
+  font-size: 13px;
+  margin-bottom: 90px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Цент по горизонталі */
+  gap: 40px; /* Відстань між пунктами меню */
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.2s;
+}
+
+.nav a:hover {
+  color: #2196f3;
+}
+
+.button {
+  width: 216px;
+  height: 50px;
+  background-color: #2196f3;
+  color: #ffffff;
+  border: #2196f3;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.tel {
+  font-family: "Roboto", sans-serif;
+  color: #757575;
+}
+
+.section1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  background-color: #2f303a;
+  width: 1600px;
+  height: 600px;
+  color: white;
+  text-align: center;
+}
+
+.section1 h1 {
+  font-size: 48px;
+  padding-top: 200px;
+  position: relative;
+}
+
+.section2 {
+  font-family: "Roboto", sans-serif;
+  justify-content: center;
+  display: flex;
+  gap: 40px;
+  font-size: 14px;
+  position: relative;
+
+}
+
+.section2 p {
+  color: #757575;
+  margin-bottom: 18px;
+  font-size: 14px;
+}
+
+.section2 h4 {
+  margin-bottom: 12px;
+}
+
+.section3 {
+  justify-content: center;
+  display: flex;
+  gap: 40px;
+  font-size: 13px;
+  position: relative;
+  margin-top: 40px;
+}
+
+.section3 h2 {
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+}
+
+.img2 {
+  width: 270px;
+  height: 260px;
+}
+
+.box1 {
+  width: 370px;
+  height: 294px;
+}
+
+.logo2 {
+  width: 145px;
+  height: 31px;
+  background-color: #2f303a;
+}
+
+.logo-web2 {
+  color: #2196f3;
+  font-size: 26px;
+  font-family: "Raleway", sans-serif;
+}
+
+.logo-studio2 {
+  color: #ffffff;
+  font-size: 26px;
+  font-family: "Raleway", sans-serif;
+}
+
+.footer {
+  background-color: #2f303a;
+  width: 1600px;
+  height: 252px;
+}
+
+.footer p {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  color: #757575;
+}
+
+.footer address {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+}
