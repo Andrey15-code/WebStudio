@@ -106,7 +106,6 @@
   gap: 40px;
   font-size: 14px;
   position: relative;
-
 }
 
 .section2 p {
@@ -183,4 +182,45 @@
 .body {
   margin: 0;
   padding: 0;
+}
+
+.cards {
+  width: 1600px;
+  height: 648px;
+  background-color: #F5F4FA;
+  font-family: "Roboto", sans-serif;
+  justify-content: center;
+  display: flex;
+}
+
+.cards p {
+  color: #757575;
+}
+
+.cards h6 {
+  color: #212121;
+}
+
+.card {
+  width:270px;
+  height: 368px;
+  background-color: #FFFFFF;
+}
+
+.card2 {
+  width:270px;
+  height: 368px;
+  background-color: #FFFFFF;
+}
+
+.card3 {
+  width:270px;
+  height: 368px;
+  background-color: #FFFFFF;
+}
+
+.card4 {
+  width:270px;
+  height: 368px;
+  background-color: #FFFFFF;
 }
