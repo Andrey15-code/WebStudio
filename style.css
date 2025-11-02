@@ -1,8 +1,6 @@
 .logo {
   width: 1600px;
   height: 80px;
-  display: flex;
-  gap: 10px;
 }
 
 .logo-web {
@@ -19,50 +17,52 @@
   font-weight: 700;
 }
 
+.nav ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav a {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+
+.nav a:hover {
+  color: #2196f3;
+}
+
 .info {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: #757575;
-  display: flex;
-  gap: 20px;
-
 }
 
 .info a {
   text-decoration: none;
-  color: black;
+  color: #757575;
   font-weight: 500;
 }
 
 .info a:hover {
   color: #2196f3;
 }
-
-.nav {
+/* перша секція*/
+.section1 {
   font-family: "Roboto", sans-serif;
-  text-decoration: none;
-  color: black;
-  color: lightblue;
-  font-size: 13px;
-  margin-bottom: 90px;
+  background-color: #2f303a;
+  text-align: center;
+  width: 1600px;
+  height: 600px;
 }
 
-.nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center; /* Цент по горизонталі */
-  gap: 40px;
-  font-size: 14px;
-}
-
-.nav a {
-  text-decoration: none;
-  color: black;
-  font-weight: 500;
-}
-
-.nav a:hover {
-  color: #2196f3;
+.section1 h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  color: #ffffff;
 }
 
 .button {
@@ -77,75 +77,121 @@
   font-size: 16px;
 }
 
-.tel {
-  font-family: "Roboto", sans-serif;
-  color: #757575;
-}
-
-.section1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  background-color: #2f303a;
-  width: 1600px;
-  height: 600px;
-  color: white;
-  text-align: center;
-}
-
-.section1 h1 {
-  font-size: 44px;
-  padding-top: 200px;
-  position: relative;
-}
+/* друга секція */
 
 .section2 {
   font-family: "Roboto", sans-serif;
+  width: 1170px;
+  height: 98px;
   justify-content: center;
   display: flex;
-  gap: 40px;
+  gap: 30px;
+}
+
+.section2 h4 {
+  color: #212121;
   font-size: 14px;
-  position: relative;
+  font-weight: 700;
 }
 
 .section2 p {
   color: #757575;
-  margin-bottom: 18px;
   font-size: 14px;
+  line-height: 24px;
   font-weight: 400;
 }
 
-.section2 h4 {
-  margin-bottom: 12px;
-  font-size: 14px;
-  font-weight: 700;
-}
+/* третя секція */
 
 .section3 {
-  justify-content: center;
-  display: flex;
-  position: relative;
+  font-family: "Roboto", sans-serif;
+  width: 1170px;
+  height: 386px;
+  text-align: center;
 }
 
 .section3 h2 {
-  font-family: "Roboto", sans-serif;
+  font-weight: 900;
   font-size: 36px;
-  font-weight: 700;
+  color: #212121;
 }
 
-.img2 {
-  width: 270px;
-  height: 260px;
-}
-
-.box1 {
+.box {
   width: 370px;
   height: 294px;
+  gap: 30px;
 }
 
-.logo2 {
-  width: 145px;
-  height: 31px;
+/* четверта секція */
+
+.section4 {
+  font-family: "Roboto", sans-serif;
+  width: 1600px;
+  height: 648px;
+  background-color: #f5f4f5;
+}
+
+.section4 h2 {
+  font-weight: 700;
+  font-size: 36px;
+  color: #212121;
+  text-align: center;
+}
+
+.cards {
+  justify-content: center;
+  display: flex;
+  gap: 30px;
+}
+
+.card {
+  width: 270px;
+  height: 368px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.card h5 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #212121;
+}
+
+.card p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #757575;
+}
+
+/* подвал */
+
+.footer {
+  width: 1600px;
+  height: 252px;
   background-color: #2f303a;
+}
+
+.info2 {
+  line-height: 24px;
+  color: #757575;
+  font-family: "Roboto", sans-serif;
+}
+
+.info2 a {
+  text-decoration: none;
+  color: #757575;
+  font-weight: 500;
+}
+
+.info2 a:hover {
+  color: #2196f3;
+}
+
+.footer address {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .logo-web2 {
@@ -160,80 +206,4 @@
   font-size: 26px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-}
-
-.footer {
-  background-color: #2f303a;
-  width: 1600px;
-  height: 252px;
-}
-
-.footer p {
-  font-family: "Roboto", sans-serif;
-  font-size: 13px;
-  color: #757575;
-}
-
-.footer address {
-  font-family: "Roboto", sans-serif;
-  font-size: 13px;
-  color: #FFFFFF;
-  margin-top: 10px;
-  font-weight: 400;
-}
-
-.body {
-  margin: 0;
-  padding: 0;
-}
-
-.cards {
-  width: 1600px;
-  height: 648px;
-  background-color: #F5F4FA;
-  font-family: "Roboto", sans-serif;
-  justify-content: center;
-  display: flex;
-  margin-left: 30px;
-}
-
-.cards p {
-  color: #757575;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.cards h6 {
-  color: #212121;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.cards h2 {
-  font-size: 36px;
-  font-weight: 700;
-}
-
-.card {
-  width:270px;
-  height: 368px;
-  background-color: #FFFFFF;
-}
-
-.card2 {
-  width:270px;
-  height: 368px;
-  background-color: #FFFFFF;
-}
-
-.card3 {
-  width:270px;
-  height: 368px;
-  background-color: #FFFFFF;
-}
-
-.card4 {
-  width:270px;
-  height: 368px;
-  background-color: #FFFFFF;
 }
