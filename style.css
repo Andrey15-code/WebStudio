@@ -9,12 +9,14 @@
   color: #2196f3;
   font-size: 26px;
   font-family: "Raleway", sans-serif;
+  font-weight: 700;
 }
 
 .logo-studio {
   color: #2f303a;
   font-size: 26px;
   font-family: "Raleway", sans-serif;
+  font-weight: 700;
 }
 
 .info {
@@ -23,11 +25,13 @@
   color: #757575;
   display: flex;
   gap: 20px;
+
 }
 
 .info a {
   text-decoration: none;
   color: black;
+  font-weight: 500;
 }
 
 .info a:hover {
@@ -54,6 +58,7 @@
 .nav a {
   text-decoration: none;
   color: black;
+  font-weight: 500;
 }
 
 .nav a:hover {
@@ -67,7 +72,7 @@
   color: #ffffff;
   border: #2196f3;
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   border-radius: 5px;
   font-size: 16px;
 }
@@ -106,11 +111,13 @@
   color: #757575;
   margin-bottom: 18px;
   font-size: 14px;
+  font-weight: 400;
 }
 
 .section2 h4 {
   margin-bottom: 12px;
   font-size: 14px;
+  font-weight: 700;
 }
 
 .section3 {
@@ -122,6 +129,7 @@
 .section3 h2 {
   font-family: "Roboto", sans-serif;
   font-size: 36px;
+  font-weight: 700;
 }
 
 .img2 {
@@ -144,12 +152,14 @@
   color: #2196f3;
   font-size: 26px;
   font-family: "Raleway", sans-serif;
+  font-weight: 700;
 }
 
 .logo-studio2 {
   color: #ffffff;
   font-size: 26px;
   font-family: "Raleway", sans-serif;
+  font-weight: 700;
 }
 
 .footer {
@@ -169,6 +179,7 @@
   font-size: 13px;
   color: #FFFFFF;
   margin-top: 10px;
+  font-weight: 400;
 }
 
 .body {
@@ -189,15 +200,18 @@
 .cards p {
   color: #757575;
   font-size: 16px;
+  font-weight: 400;
 }
 
 .cards h6 {
   color: #212121;
   font-size: 16px;
+  font-weight: 500;
 }
 
 .cards h2 {
   font-size: 36px;
+  font-weight: 700;
 }
 
 .card {
