@@ -1,3 +1,4 @@
+/* логотип */
 .logo {
   width: 1600px;
   height: 80px;
@@ -17,12 +18,13 @@
   font-weight: 700;
 }
 
-.nav ul {
+/* навігація */
+.nav-list {
   text-decoration: none;
   list-style: none;
 }
 
-.nav a {
+.nav-link {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -30,26 +32,28 @@
   color: black;
 }
 
-.nav a:hover {
+.nav-link:hover {
   color: #2196f3;
 }
 
+/* інфо */
 .info {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: #757575;
 }
 
-.info a {
+.info-link {
   text-decoration: none;
   color: #757575;
   font-weight: 500;
 }
 
-.info a:hover {
+.info-link:hover {
   color: #2196f3;
 }
-/* перша секція*/
+
+/* перша секція */
 .section1 {
   font-family: "Roboto", sans-serif;
   background-color: #2f303a;
@@ -58,14 +62,14 @@
   height: 600px;
 }
 
-.section1 h1 {
+.section1-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   color: #ffffff;
 }
 
-.button {
+.section1-button {
   width: 216px;
   height: 50px;
   background-color: #2196f3;
@@ -78,7 +82,6 @@
 }
 
 /* друга секція */
-
 .section2 {
   font-family: "Roboto", sans-serif;
   width: 1170px;
@@ -88,21 +91,20 @@
   gap: 30px;
 }
 
-.section2 h4 {
+.section2-title {
   color: #212121;
   font-size: 14px;
   font-weight: 700;
 }
 
-.section2 p {
+.section2-text {
   color: #757575;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   font-weight: 400;
 }
 
 /* третя секція */
-
 .section3 {
   font-family: "Roboto", sans-serif;
   width: 1170px;
@@ -110,20 +112,19 @@
   text-align: center;
 }
 
-.section3 h2 {
+.section3-title {
   font-weight: 900;
   font-size: 36px;
   color: #212121;
 }
 
-.box {
+.section3-box {
   width: 370px;
   height: 294px;
   gap: 30px;
 }
 
-/* четверта секція */
-
+/* Четверта секція */
 .section4 {
   font-family: "Roboto", sans-serif;
   width: 1600px;
@@ -131,77 +132,76 @@
   background-color: #f5f4f5;
 }
 
-.section4 h2 {
+.section4-title {
   font-weight: 700;
   font-size: 36px;
   color: #212121;
   text-align: center;
 }
 
-.cards {
+.section4-cards {
   justify-content: center;
   display: flex;
   gap: 30px;
 }
 
-.card {
+.section4-card {
   width: 270px;
   height: 368px;
   background-color: #ffffff;
   text-align: center;
 }
 
-.card h5 {
+.section4-card-title {
   font-size: 16px;
   font-weight: 500;
   color: #212121;
 }
 
-.card p {
+.section4-card-text {
   font-size: 16px;
   font-weight: 400;
   color: #757575;
 }
 
-/* подвал */
-
+/* підвал */
 .footer {
   width: 1600px;
   height: 252px;
   background-color: #2f303a;
 }
 
-.info2 {
-  line-height: 24px;
+.footer-info {
+  line-height: 1.71;
   color: #757575;
   font-family: "Roboto", sans-serif;
 }
 
-.info2 a {
+.footer-info-link {
   text-decoration: none;
   color: #757575;
   font-weight: 500;
 }
 
-.info2 a:hover {
+.footer-info-link:hover {
   color: #2196f3;
 }
 
-.footer address {
+.footer-address {
   font-family: "Roboto", sans-serif;
   color: #ffffff;
   font-size: 14px;
   font-weight: 400;
 }
 
-.logo-web2 {
+.footer-logo-web {
   color: #2196f3;
   font-size: 26px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
 
-.logo-studio2 {
+.footer-logo-studio {
   color: #ffffff;
   font-size: 26px;
   font-family: "Raleway", sans-serif;

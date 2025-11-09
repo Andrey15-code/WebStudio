@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,114 +11,137 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
     <title>WebStudio</title>
   </head>
+
   <body class="body">
-    <header>
-      <div class="logo">
-        <h2>
-          <span class="logo-web">Web</span>
-          <span class="logo-studio">Studio</span>
-        </h2>
-      </div>
-      <div class="nav">
-        <ul>
-          <li><a href="#">Студія</a></li>
-          <li><a href="#">Портфоліо</a></li>
-          <li><a href="#">Контакти</a></li>
-        </ul>
-      </div>
-      <div class="info">
-        <a href="#">info@devstudio.com</a>
-        <span class="tel">+38 096 111 11 11</span>
-      </div>
+    <header class="header">
+      <section class="header-inner">
+        <div class="logo">
+          <h2 class="logo-title">
+            <span class="logo-web">Web</span>
+            <span class="logo-studio">Studio</span>
+          </h2>
+        </div>
+
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-link">Студія</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Портфоліо</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Контакти</a></li>
+          </ul>
+        </nav>
+
+        <div class="info">
+          <a href="#" class="info-link">info@devstudio.com</a>
+          <span class="info-tel">+38 096 111 11 11</span>
+        </div>
+      </section>
     </header>
-    <main>
+
+    <main class="main">
+      <!-- Секція 1 -->
       <section class="section1">
-        <h1>
+        <h1 class="section1-title">
           ЕФЕКТИВНІ РІШЕННЯ ДЛЯ<br />
           ВАШОГО БІЗНЕСУ
         </h1>
-        <button class="button" type="submit">Замовити послугу</button>
+        <button class="section1-button" type="submit">Замовити послугу</button>
       </section>
+
+      <!-- Секція 2 -->
       <section class="section2">
-        <div class="Feature1">
-          <h4>УВАГА ДО ДЕТАЛЕЙ</h4>
-          <p>
+        <div class="section2-feature">
+          <h4 class="section2-title">УВАГА ДО ДЕТАЛЕЙ</h4>
+          <p class="section2-text">
             Ідейні міркування, і навіть початок<br />
-            повсякденної роботи з формування <br />
-            позиції.
+            повсякденної роботи з формування позиції.
           </p>
         </div>
-        <div class="Feature2">
-          <h4>ПУНКТУАЛЬНІСТЬ</h4>
-          <p>
+
+        <div class="section2-feature">
+          <h4 class="section2-title">ПУНКТУАЛЬНІСТЬ</h4>
+          <p class="section2-text">
             Завдання організації, особливо рамки<br />
             і місце навчання кадрів тягне у себе.
           </p>
         </div>
-        <div class="Feature3">
-          <h4>ПЛАНУВАННЯ</h4>
-          <p>
+
+        <div class="section2-feature">
+          <h4 class="section2-title">ПЛАНУВАННЯ</h4>
+          <p class="section2-text">
             Так само консультація з широким<br />
             активом значною мірою зумовлює.
           </p>
         </div>
-        <div class="Feature4">
-          <h4>СУЧАСНІ ТЕХНОЛОГІЇ</h4>
-          <p>
-            Значимість цих проблем настільки <br />
-            очевидна, що реалізація планових<br />
-            завдань.
+
+        <div class="section2-feature">
+          <h4 class="section2-title">СУЧАСНІ ТЕХНОЛОГІЇ</h4>
+          <p class="section2-text">
+            Значимість цих проблем настільки<br />
+            очевидна, що реалізація планових завдань.
           </p>
         </div>
       </section>
+
+      <!-- Секція 3 -->
       <section class="section3">
-        <h2>Чим ми займаємося</h2>
-        <img src="./img/box1.png" alt="" class="box" />
-        <img src="./img/box2.png" alt="" class="box" />
-        <img src="./img/box3.png" alt="" class="box" />
+        <h2 class="section3-title">Чим ми займаємося</h2>
+        <div class="section3-gallery">
+          <img src="./img/box1.png" alt="" class="section3-box" />
+          <img src="./img/box2.png" alt="" class="section3-box" />
+          <img src="./img/box3.png" alt="" class="section3-box" />
+        </div>
       </section>
+
+      <!-- Секція 4 -->
       <section class="section4">
-        <h2>Наша команда</h2>
-        <div class="cards">
-          <div class="card">
-            <img src="./img/img.png" alt="" class="img2" />
-            <h5>Ігор Дем'яненко</h5>
-            <p>Product Designer</p>
+        <h2 class="section4-title">Наша команда</h2>
+        <div class="section4-cards">
+          <div class="section4-card">
+            <img src="./img/img.png" alt="" class="section4-card-img" />
+            <h5 class="section4-card-title">Ігор Дем'яненко</h5>
+            <p class="section4-card-text">Product Designer</p>
           </div>
-          <div class="card">
-            <img src="./img/img1.png" alt="" class="img2" />
-            <h5>Ольга Рєпіна</h5>
-            <p>Frontend Developer</p>
+
+          <div class="section4-card">
+            <img src="./img/img1.png" alt="" class="section4-card-img" />
+            <h5 class="section4-card-title">Ольга Рєпіна</h5>
+            <p class="section4-card-text">Frontend Developer</p>
           </div>
-          <div class="card">
-            <img src="./img/img2.png" alt="" class="img2" />
-            <h5>Микола Тарасов</h5>
-            <p>Marketing</p>
+
+          <div class="section4-card">
+            <img src="./img/img2.png" alt="" class="section4-card-img" />
+            <h5 class="section4-card-title">Микола Тарасов</h5>
+            <p class="section4-card-text">Marketing</p>
           </div>
-          <div class="card">
-            <img src="./img/img3.png" alt="" class="img2" />
-            <h5>Михайло Єрмаков</h5>
-            <p>UI Designer</p>
+
+          <div class="section4-card">
+            <img src="./img/img3.png" alt="" class="section4-card-img" />
+            <h5 class="section4-card-title">Михайло Єрмаков</h5>
+            <p class="section4-card-text">UI Designer</p>
           </div>
         </div>
       </section>
     </main>
+
     <footer class="footer">
-      <div class="logo2">
-        <h2>
-          <span class="logo-web2">Web</span>
-          <span class="logo-studio2">Studio</span>
+      <div class="footer-logo">
+        <h2 class="footer-logo-title">
+          <span class="footer-logo-web">Web</span>
+          <span class="footer-logo-studio">Studio</span>
         </h2>
       </div>
-      <div class="info2">
-        <address>м. Київ, пр-т Лесі Українки, 26</address>
-        <a href="#">info@devstudio.com</a>
-        <p>+38 096 111 11 11</p>
+
+      <div class="footer-info">
+        <address class="footer-address">
+          м. Київ, пр-т Лесі Українки, 26
+        </address>
+        <a href="#" class="footer-info-link">info@devstudio.com</a>
+        <p class="footer-info-tel">+38 096 111 11 11</p>
       </div>
     </footer>
   </body>
