@@ -1,0 +1,201 @@
+img {
+  width:370px;
+  height: 294px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  background-color: #ECECEC;
+  height: 80px;
+  width: 1600px;
+  text-align: center;
+}
+
+/* нам меню */
+
+.header_nav-list a {
+  text-decoration: none;
+  color: #212121;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.71;
+}
+
+.header_nav-list a:hover{
+  color: #2196f3;
+}
+
+.header_nav-list {
+  list-style: none;
+}
+
+.header_info a {
+  text-decoration: none;
+  color: #757575;
+}
+
+.header_info a:hover {
+  color: #2196f3;
+}
+
+.header_logo-web {
+  color: #2196f3;
+  font-size: 34px;
+  font-family: "Raleway", sans-serif;
+}
+
+.header_logo-studio {
+  color: #2f303a;
+  font-size: 34px;
+  font-family: "Raleway", sans-serif;
+}
+
+/* навігаційні кнопки */
+
+.portfolio_filters {
+  text-align: center;
+}
+
+.portfolio_button1 {
+  height: 38px;
+  width: 73px;
+  line-height: 1.625;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  background-color: #F5F4FA;
+  color: #212121;
+}
+
+.portfolio_button2 {
+  height: 38px;
+  width: 125px;
+  line-height: 1.625;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  background-color: #F5F4FA;
+  color: #212121;
+}
+
+.portfolio_button3 {
+  height: 38px;
+  width: 112px;
+  line-height: 1.625;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  background-color: #F5F4FA;
+  color: #212121;
+}
+
+.portfolio_button4 {
+  height: 38px;
+  width: 103px;
+  line-height: 1.625;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  background-color: #F5F4FA;
+  color: #212121;
+}
+
+.portfolio_button5 {
+  height: 38px;
+  width: 130px;
+  line-height: 1.625;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  background-color: #F5F4FA;
+  color: #212121;
+}
+
+.portfolio_filters button:hover{
+  color: #ffffff;
+  background-color: #2196F3;
+}
+
+/* картки портфоліо */
+
+.portfolio_card {
+  height: 404px;
+  width: 370px;
+  background-color: #FFFFFF;
+  border: 1px solid #EEEEEE;
+}
+
+.portfolio_title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #212121;
+  line-height: 1.66;
+}
+
+.portfolio_type {
+  font-size: 16px;
+  font-weight: 400;
+  color: #757575;
+  line-height: 1.87;
+}
+
+.portfolio_image {
+  width: 370px;
+  height: 294px;
+}
+
+.portfolio_type-italic {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  color: #757575;
+  line-height: 1.87;
+}
+
+/* підвал */
+
+.footer {
+  height: 252px;
+  width: 1600px;
+  background-color: #2F303A;
+}
+
+.footer_contacts a {
+  font-weight: 400;
+  text-decoration: none;
+  color: #757575;
+  line-height: 1.71;
+  font-size: 14px;
+}
+
+.footer_contacts a:hover {
+  color: #2196f3;
+}
+
+.footer_address {
+  color: #FFFFFF;
+  font-weight: 400;
+  line-height: 1.71;
+  font-size: 14px;
+}
+
+.footer_logo-web {
+  color: #2196f3;
+  font-size: 26px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.footer_logo-studio {
+  color: #FFFFFF;
+  font-size: 26px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
