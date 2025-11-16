@@ -17,7 +17,6 @@ body {
 /* нам меню */
 
 .header_nav-list a {
-  text-decoration: none;
   color: #212121;
   font-family: "Roboto", sans-serif;
   line-height: 1.71;
@@ -27,12 +26,7 @@ body {
   color: #2196f3;
 }
 
-.header_nav-list {
-  list-style: none;
-}
-
 .header_info a {
-  text-decoration: none;
   color: #757575;
 }
 
@@ -169,7 +163,6 @@ body {
 
 .footer_contacts a {
   font-weight: 400;
-  text-decoration: none;
   color: #757575;
   line-height: 1.71;
   font-size: 14px;
