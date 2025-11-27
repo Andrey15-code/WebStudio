@@ -2,8 +2,37 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.conteiner {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.conteiner2 {
+  width: 1170px;
+  height: 600px;
+  margin: 0 auto ;
+  text-align: center;
+}
+
+.specialitie {
+  width: 1170px;
+  height: 98px;
+  text-align: left;
+  justify-content: center;
+  display: inline-flex;
+  gap: 30px;
+  margin: 89px auto 94px auto;
+}
+
 /* логотип */
-.logo {
+
+.logo-nav{
+  display: flex;
+  justify-content: center;
+}
+
+.header-inner {
   width: 1600px;
   height: 80px;
 }
@@ -55,9 +84,13 @@ body {
 .section1 {
   font-family: "Roboto", sans-serif;
   background-color: #2f303a;
-  text-align: center;
   width: 1600px;
   height: 600px;
+}
+
+.section1-block {
+  margin: 195px auto 205px auto;
+  display: inline-block;
 }
 
 .section1-title {
@@ -82,17 +115,18 @@ body {
 /* друга секція */
 .section2 {
   font-family: "Roboto", sans-serif;
-  width: 1170px;
-  height: 98px;
+  width: 1600px;
+  height: 281px;
+  text-align: center;
   justify-content: center;
-  display: flex;
-  gap: 30px;
+  display: inline-block;
 }
 
 .section2-title {
   color: #212121;
   font-size: 14px;
   font-weight: 700;
+  gap: 30px;
 }
 
 .section2-text {
@@ -105,8 +139,8 @@ body {
 /* третя секція */
 .section3 {
   font-family: "Roboto", sans-serif;
-  width: 1170px;
-  height: 386px;
+  width: 1600px;
+  height: 480px;
   text-align: center;
 }
 
@@ -128,6 +162,11 @@ body {
   width: 1600px;
   height: 648px;
   background-color: #f5f4f5;
+}
+
+.our_team {
+  margin: 94px auto 94px auto;
+  display: inline-block;
 }
 
 .section4-title {
@@ -178,6 +217,7 @@ body {
 .footer-info-link {
   color: #757575;
   font-weight: 500;
+  display: block;
 }
 
 .footer-info-link:hover {
