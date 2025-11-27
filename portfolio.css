@@ -7,11 +7,20 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.header {
+header {
   background-color: #ECECEC;
   height: 80px;
   width: 1600px;
-  text-align: center;
+}
+
+.header {
+  justify-content: center;
+  display: inline-flex;
+}
+
+.container {
+  width: 1170px;
+  margin: auto 175.4px auto 175.4px;
 }
 
 /* нам меню */
@@ -118,6 +127,24 @@ body {
 }
 
 /* картки портфоліо */
+
+.cards1 {
+  justify-content: center;
+  display: flex;
+  gap: 30px
+}
+
+.cards2 {
+  justify-content: center;
+  display: flex;
+  gap: 30px
+}
+
+.cards3 {
+  justify-content: center;
+  display: flex;
+  gap: 30px
+}
 
 .portfolio_card {
   height: 404px;

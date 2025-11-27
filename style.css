@@ -2,16 +2,16 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.conteiner {
+.container {
   width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-.conteiner2 {
+.container2 {
   width: 1170px;
   height: 600px;
-  margin: 0 auto ;
+  margin:  0 auto;
   text-align: center;
 }
 
@@ -165,7 +165,7 @@ body {
 }
 
 .our_team {
-  margin: 94px auto 94px auto;
+  margin: 94px 215px 94px 215px;
   display: inline-block;
 }
 

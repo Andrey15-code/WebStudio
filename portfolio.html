@@ -2,8 +2,8 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./normalize.css">
-    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./portfolio.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,113 +18,152 @@
     <title>WebStudio</title>
   </head>
   <body class="body">
-    <header class="header">
-      <div class="header_logo">
-        <h2>
-          <span class="header_logo-web">Web</span>
-          <span class="header_logo-studio">Studio</span>
-        </h2>
-      </div>
+    <header>
+      <div class="container">
+        <div class="header">
+          <div class="header_logo">
+            <h2>
+              <span class="header_logo-web">Web</span>
+              <span class="header_logo-studio">Studio</span>
+            </h2>
+          </div>
 
-      <nav class="header_nav">
-        <ul class="header_nav-list">
-          <li><a class="header_nav-link" href="#">Студія</a></li>
-          <li><a class="header_nav-link" href="#">Портфоліо</a></li>
-          <li><a class="header_nav-link" href="#">Контакти</a></li>
-        </ul>
-      </nav>
+          <nav class="header_nav">
+            <ul class="header_nav-list">
+              <li><a class="header_nav-link" href="#">Студія</a></li>
+              <li><a class="header_nav-link" href="#">Портфоліо</a></li>
+              <li><a class="header_nav-link" href="#">Контакти</a></li>
+            </ul>
+          </nav>
 
-      <div class="header_info">
-        <a class="header_info-mail" href="#">info@devstudio.com</a>
-        <a class="header_info-tel" href="#">+38 096 111 11 11</a>
+          <div class="header_info">
+            <a class="header_info-mail" href="#">info@devstudio.com</a>
+            <a class="header_info-tel" href="#">+38 096 111 11 11</a>
+          </div>
+        </div>
       </div>
     </header>
 
     <main class="portfolio">
-      <nav class="portfolio_filters">
-        <button class="portfolio_button1">Усі</button>
-        <button class="portfolio_button2">Веб-сайти</button>
-        <button class="portfolio_button3">Додатки</button>
-        <button class="portfolio_button4">Дизайн</button>
-        <button class="portfolio_button5">Маркетинг</button>
-      </nav>
+      <section class="section1">
+        <div class="container">
+          <nav class="portfolio_filters">
+            <button class="portfolio_button1">Усі</button>
+            <button class="portfolio_button2">Веб-сайти</button>
+            <button class="portfolio_button3">Додатки</button>
+            <button class="portfolio_button4">Дизайн</button>
+            <button class="portfolio_button5">Маркетинг</button>
+          </nav>
+          <div class="cards1">
+            <div class="portfolio_cards">
+              <div class="portfolio_card">
+                <img
+                  src="./img/card1.jpg"
+                  alt="Технокряк"
+                  class="portfolio_image"
+                />
+                <h4 class="portfolio_title">Технокряк</h4>
+                <p class="portfolio_type">Веб-сайт</p>
+              </div>
 
-      <div class="portfolio_cards">
-        <div class="portfolio_card">
-          <img src="./img/card1.jpg" alt="Технокряк" class="portfolio_image" />
-          <h4 class="portfolio_title">Технокряк</h4>
-          <p class="portfolio_type">Веб-сайт</p>
+              <div class="portfolio_card">
+                <img
+                  src="./img/card2.jpg"
+                  alt="Постер"
+                  class="portfolio_image"
+                />
+                <h4 class="portfolio_title">
+                  Постер New Orlean vs Golden Star
+                </h4>
+                <p class="portfolio_type">Дизайн</p>
+              </div>
+              <div class="portfolio_card">
+                <img
+                  src="./img/card3.jpg"
+                  alt="Seafood"
+                  class="portfolio_image"
+                />
+                <h4 class="portfolio_title">Ресторан Seafood</h4>
+                <p class="portfolio_type">Додаток</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="portfolio_card">
-          <img src="./img/card2.jpg" alt="Постер" class="portfolio_image" />
-          <h4 class="portfolio_title">Постер New Orlean vs Golden Star</h4>
-          <p class="portfolio_type">Дизайн</p>
-        </div>
+      <section class="section2">
+        <div class="container">
+          <div class="cards2">
+            <div class="portfolio_card">
+              <img src="./img/card4.jpg" alt="Prime" class="portfolio_image" />
+              <h4 class="portfolio_title">Проєкт Prime</h4>
+              <p class="portfolio_type">Маркетинг</p>
+            </div>
 
-        <div class="portfolio_card">
-          <img src="./img/card3.jpg" alt="Seafood" class="portfolio_image" />
-          <h4 class="portfolio_title">Ресторан Seafood</h4>
-          <p class="portfolio_type">Додаток</p>
-        </div>
+            <div class="portfolio_card">
+              <img src="./img/card5.jpg" alt="Boxes" class="portfolio_image" />
+              <h4 class="portfolio_title">Проєкт Boxes</h4>
+              <p class="portfolio_type">Додаток</p>
+            </div>
 
-        <div class="portfolio_card">
-          <img src="./img/card4.jpg" alt="Prime" class="portfolio_image" />
-          <h4 class="portfolio_title">Проєкт Prime</h4>
-          <p class="portfolio_type">Маркетинг</p>
+            <div class="portfolio_card">
+              <img
+                src="./img/card6.jpg"
+                alt="Borders"
+                class="portfolio_image"
+              />
+              <h4 class="portfolio_title">Inspiration has no Borders</h4>
+              <p class="portfolio_type">Веб-сайт</p>
+            </div>
+          </div>
         </div>
+      </section>
+      <section class="section3">
+        <div class="cards3">
+          <div class="portfolio_card">
+            <img
+              src="./img/card7.jpg"
+              alt="Limited Edition"
+              class="portfolio_image"
+            />
+            <h4 class="portfolio_title">Видання Limited Edition</h4>
+            <p class="portfolio_type-italic">Дизайн</p>
+          </div>
 
-        <div class="portfolio_card">
-          <img src="./img/card5.jpg" alt="Boxes" class="portfolio_image" />
-          <h4 class="portfolio_title">Проєкт Boxes</h4>
-          <p class="portfolio_type">Додаток</p>
-        </div>
+          <div class="portfolio_card">
+            <img src="./img/card8.jpg" alt="LAB" class="portfolio_image" />
+            <h4 class="portfolio_title">Проєкт LAB</h4>
+            <p class="portfolio_type">Маркетинг</p>
+          </div>
 
-        <div class="portfolio_card">
-          <img src="./img/card6.jpg" alt="Borders" class="portfolio_image" />
-          <h4 class="portfolio_title">Inspiration has no Borders</h4>
-          <p class="portfolio_type">Веб-сайт</p>
+          <div class="portfolio_card">
+            <img
+              src="./img/card9.jpg"
+              alt="Growing Business"
+              class="portfolio_image"
+            />
+            <h4 class="portfolio_title">Growing Business</h4>
+            <p class="portfolio_type-italic">Додаток</p>
+          </div>
         </div>
-
-        <div class="portfolio_card">
-          <img
-            src="./img/card7.jpg"
-            alt="Limited Edition"
-            class="portfolio_image"
-          />
-          <h4 class="portfolio_title">Видання Limited Edition</h4>
-          <p class="portfolio_type-italic">Дизайн</p>
-        </div>
-
-        <div class="portfolio_card">
-          <img src="./img/card8.jpg" alt="LAB" class="portfolio_image" />
-          <h4 class="portfolio_title">Проєкт LAB</h4>
-          <p class="portfolio_type">Маркетинг</p>
-        </div>
-
-        <div class="portfolio_card">
-          <img
-            src="./img/card9.jpg"
-            alt="Growing Business"
-            class="portfolio_image"
-          />
-          <h4 class="portfolio_title">Growing Business</h4>
-          <p class="portfolio_type-italic">Додаток</p>
-        </div>
-      </div>
+      </section>
     </main>
 
     <footer class="footer">
-      <div class="footer_logo">
-        <h2>
-          <span class="footer_logo-web">Web</span>
-          <span class="footer_logo-studio">Studio</span>
-        </h2>
-      </div>
-      <address class="footer_address">м. Київ, пр-т Лесі Українки, 26</address>
-      <div class="footer_contacts">
-        <a href="#" class="footer_mail">info@devstudio.com</a><br />
-        <a href="#" class="footer_tel">+38 096 111 11 11</a>
+      <div class="container">
+        <div class="footer_logo">
+          <h2>
+            <span class="footer_logo-web">Web</span>
+            <span class="footer_logo-studio">Studio</span>
+          </h2>
+        </div>
+        <address class="footer_address">
+          м. Київ, пр-т Лесі Українки, 26
+        </address>
+        <div class="footer_contacts">
+          <a href="#" class="footer_mail">info@devstudio.com</a><br />
+          <a href="#" class="footer_tel">+38 096 111 11 11</a>
+        </div>
       </div>
     </footer>
   </body>
