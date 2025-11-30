@@ -9,6 +9,7 @@ a {
 
 ul {
   list-style: none;
+  padding-inline-start: 0px
 }
 
 body {
@@ -17,3 +18,14 @@ body {
   padding: 0;
 }
 
+h2 {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}

@@ -4,32 +4,24 @@ body {
 
 .container {
   width: 1170px;
+  height: 100%;
   margin: 0 auto;
   padding: 0 15px;
-}
-
-.container2 {
-  width: 1170px;
-  height: 600px;
-  margin:  0 auto;
-  text-align: center;
-}
-
-.specialitie {
-  width: 1170px;
-  height: 98px;
-  text-align: left;
-  justify-content: center;
-  display: inline-flex;
-  gap: 30px;
-  margin: 89px auto 94px auto;
+  display: flex;
+  flex-direction: column;
 }
 
 /* логотип */
 
-.logo-nav{
+.logo {
   display: flex;
-  justify-content: center;
+  align-items: center;
+}
+
+.logo-nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
 
 .header-inner {
@@ -53,6 +45,17 @@ body {
 
 /* навігація */
 
+.nav {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin: 0 344px 0 93px;
+}
+
 .nav-link {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -69,6 +72,9 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: #757575;
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
 .info-link {
@@ -90,7 +96,9 @@ body {
 
 .section1-block {
   margin: 195px auto 205px auto;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section1-title {
@@ -98,6 +106,8 @@ body {
   font-size: 44px;
   line-height: 1.36;
   color: #ffffff;
+  display: flex;
+  text-align: center;
 }
 
 .section1-button {
@@ -113,13 +123,24 @@ body {
 }
 
 /* друга секція */
+
+.section-spetion {
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  margin: 89px 0 0 0;
+}
+
+.section2-feature {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .section2 {
   font-family: "Roboto", sans-serif;
   width: 1600px;
   height: 281px;
-  text-align: center;
-  justify-content: center;
-  display: inline-block;
 }
 
 .section2-title {
@@ -137,6 +158,12 @@ body {
 }
 
 /* третя секція */
+.section3-gallery {
+  justify-content: center;
+  display: flex;
+  gap: 30px;
+}
+
 .section3 {
   font-family: "Roboto", sans-serif;
   width: 1600px;
@@ -148,6 +175,7 @@ body {
   font-weight: 900;
   font-size: 36px;
   color: #212121;
+  margin: 0 0 50px 0;
 }
 
 .section3-box {
@@ -165,8 +193,10 @@ body {
 }
 
 .our_team {
-  margin: 94px 215px 94px 215px;
-  display: inline-block;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 94px 0 0 0 ;
 }
 
 .section4-title {
@@ -202,6 +232,13 @@ body {
 }
 
 /* підвал */
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin: 60px 0 20px 0;
+}
+
 .footer {
   width: 1600px;
   height: 252px;
@@ -212,6 +249,9 @@ body {
   line-height: 1.71;
   color: #757575;
   font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
 }
 
 .footer-info-link {
