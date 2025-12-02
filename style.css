@@ -25,7 +25,6 @@ body {
 }
 
 .header-inner {
-  width: 1600px;
   height: 80px;
 }
 
@@ -90,7 +89,6 @@ body {
 .section1 {
   font-family: "Roboto", sans-serif;
   background-color: #2f303a;
-  width: 1600px;
   height: 600px;
 }
 
@@ -139,7 +137,6 @@ body {
 
 .section2 {
   font-family: "Roboto", sans-serif;
-  width: 1600px;
   height: 281px;
 }
 
@@ -166,7 +163,6 @@ body {
 
 .section3 {
   font-family: "Roboto", sans-serif;
-  width: 1600px;
   height: 480px;
   text-align: center;
 }
@@ -187,7 +183,6 @@ body {
 /* Четверта секція */
 .section4 {
   font-family: "Roboto", sans-serif;
-  width: 1600px;
   height: 648px;
   background-color: #f5f4f5;
 }
@@ -240,7 +235,6 @@ body {
 }
 
 .footer {
-  width: 1600px;
   height: 252px;
   background-color: #2f303a;
 }
