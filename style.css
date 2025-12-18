@@ -122,6 +122,10 @@ body {
 
 /* друга секція */
 
+.section2-img {
+  margin: 0 0 20px 0;
+}
+
 .section-spetion {
   display: flex;
   align-items: top;
