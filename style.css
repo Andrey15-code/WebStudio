@@ -24,7 +24,7 @@ body {
   display: flex;
 }
 
-.header-inner { 
+.header-inner {
   height: 80px;
 }
 
@@ -137,7 +137,8 @@ body {
 
 .section2 {
   font-family: "Roboto", sans-serif;
-  height: 281px;
+  height: auto;
+  margin: 0 0 94px 0;
 }
 
 .section2-title {
