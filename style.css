@@ -123,7 +123,30 @@ body {
 /* друга секція */
 
 .section2-img {
-  margin: 0 0 20px 0;
+  width: 70px;
+  height: 70px;
+  display: block;
+}
+
+.section2-img_container {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 20px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.section2-img_container::before {
+  content: "";
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  background-size: 270px 90px;
+  z-index: -1;
+  position: absolute;
+  border-radius: 3px;
+  display: block;
 }
 
 .section-spetion {
