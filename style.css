@@ -137,7 +137,6 @@ body {
   align-items: center;
 }
 
-
 .section2-feature:nth-child(1):before {
   content: url("./img/antenna1.png");
   display: flex;
@@ -278,6 +277,9 @@ body {
   height: 368px;
   background-color: #ffffff;
   text-align: center;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+box-shadow: 0px 5px 2px -1px rgba(196,196,196,0.73);
 }
 
 .section4-card-title {
@@ -290,6 +292,10 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #757575;
+}
+
+.section4-card:hover {
+  box-shadow: 0px 5px 2px -1px rgba(196,196,196,0.100);
 }
 
 /* підвал */
