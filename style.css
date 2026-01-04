@@ -88,19 +88,45 @@ body {
 /* перша секція */
 .section1 {
   font-family: "Roboto", sans-serif;
-  background-image: url("./img/section1.jpg"), linear-gradient(90deg, rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-  object-fit: cover;
   height: 600px;
+  position: relative;
+  overflow: hidden;
 }
+
+.section-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.overlay-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  
+  z-index: 0;
+}
+
+.section-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba (47, 48, 58, 0.4);
+  z-index: 1;
+}
+
 
 .section1-block {
   margin: 195px auto 205px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 2;
+  position: relative;
 }
 
 .section1-title {
