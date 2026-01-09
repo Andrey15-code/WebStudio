@@ -89,15 +89,6 @@ body {
 .section1 {
   font-family: "Roboto", sans-serif;
   height: 600px;
-  position: relative;
-  overflow: hidden;
-}
-
-.section1::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -109,6 +100,7 @@ body {
   background-position: center;
 }
 
+
 /* background-color: rgba (47, 48, 58, 0.4); */
 
 .section1-block {
@@ -116,8 +108,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  z-index: 1;
+
 }
 
 .section1-title {
