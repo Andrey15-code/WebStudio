@@ -369,3 +369,48 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
+
+.icon-container {
+  display: flex;
+  gap: 70px;
+}
+
+.icon {
+  display: flex;
+
+}
+
+.icon-item {
+  width: 44px;
+  height: 44px;
+  background-color: #f5f4fa;
+}
+
+.customers-title {
+  font-family: "roboto", sans-serif;
+  font-size: 36px;
+  letter-spacing: 1px;
+  color: #212121;
+  font-weight: 700;
+  margin: 94px auto 50px auto;
+}
+
+.customers-img {
+  display: flex;
+  gap: 30px;
+}
+
+.customers-icon > svg {
+  fill: #AFB1B8;
+  border: 2px solid #AFB1B8;
+  border-radius: 7px;
+  width: 106px;
+  height: 60px;
+  padding: 16px 32px 16px 32px;
+  margin-bottom: 94px;
+}
+
+.customers-icon > svg:hover {
+  fill: #2196f3;
+  border: 2px solid #2196f3;
+}
