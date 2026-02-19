@@ -68,17 +68,25 @@ body {
 
 /* інфо */
 .info {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  color: #757575;
-  display: flex;
-  align-items: center;
+  justify-content: center;
   gap: 50px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin:  0  auto;
 }
 
 .info-link {
   color: #757575;
   font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #757575;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .info-link:hover {
@@ -89,17 +97,13 @@ body {
 .section1 {
   font-family: "Roboto", sans-serif;
   height: 600px;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+  background-image:
+    linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url("./img/section1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-
 
 /* background-color: rgba (47, 48, 58, 0.4); */
 
@@ -108,7 +112,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .section1-title {
@@ -291,7 +294,6 @@ body {
 
 .section4-card {
   width: 270px;
-  height: 368px;
   background-color: #ffffff;
   text-align: center;
   border-bottom-right-radius: 3px;
@@ -310,11 +312,37 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #757575;
-  margin: 0 0 30px 0;
 }
 
 .section4-card:hover {
   box-shadow: 0px 5px 2px -1px rgba(196, 196, 196, 0.1);
+}
+
+.icon-card {
+  display: flex;
+  gap: 10px;
+  margin: 16px 32px 30px 32px;
+}
+
+.icon-item-card > svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.icon-item-card:hover > svg {
+  fill: #ffffff;
+}
+
+.icon-item-card:hover {
+  background-color: #2196f3;
+}
+
+.icon-item-card {
+  border-radius: 32px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* підвал */
@@ -372,18 +400,48 @@ body {
 
 .icon-container {
   display: flex;
-  gap: 70px;
+  flex-direction: column;
+  margin: 72px auto 0 70px;
 }
 
 .icon {
   display: flex;
+  gap: 10px;
+}
 
+.icon-item > svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.icon-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .icon-item {
-  width: 44px;
-  height: 44px;
-  background-color: #f5f4fa;
+  background-color: #ffffff2c;
+  border-radius: 32px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-item > svg:hover {
+  fill: #ffffff;
+}
+
+.icon-item:hover {
+  background-color: #2196f3;
+}
+
+.logo-icon {
+  display: flex;
 }
 
 .customers-title {
@@ -401,8 +459,8 @@ body {
 }
 
 .customers-icon > svg {
-  fill: #AFB1B8;
-  border: 2px solid #AFB1B8;
+  fill: #afb1b8;
+  border: 2px solid #afb1b8;
   border-radius: 7px;
   width: 106px;
   height: 60px;
