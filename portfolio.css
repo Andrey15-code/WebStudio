@@ -116,7 +116,9 @@ section {
 
 .portfolio_filters {
   text-align: center;
-  margin: 94px 0 50px 0;
+  margin: 94px auto 50px auto;
+  gap: 8px;
+  display: flex;
 }
 
 .portfolio_button {
@@ -323,6 +325,7 @@ section {
   width: 20px;
   height: 20px;
   fill: #ffffff;
+  display: block;
 }
 
 .icon-title {
