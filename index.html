@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./normalize.css" />
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="img/fonts/style.css">
+    <link rel="stylesheet" href="img/fonts/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -115,9 +115,24 @@
         <div class="container">
           <h2 class="section3-title">Чим ми займаємося</h2>
           <div class="section3-gallery">
-            <img src="./img/box1.jpg" alt="" class="section3-box" />
-            <img src="./img/box2.jpg" alt="" class="section3-box" />
-            <img src="./img/box3.jpg" alt="" class="section3-box" />
+            <div class="section3-box-container">
+              <img src="./img/box1.jpg" alt="" class="section3-box" />
+              <div class="section3-box-item">
+                <p class="section3-box-item-p">Десктопні додатки</p>
+              </div>
+            </div>
+            <div class="section3-box-container">
+              <img src="./img/box2.jpg" alt="" class="section3-box" />
+              <div class="section3-box-item">
+                <p class="section3-box-item-p">Мобільні додатки</p>
+              </div>
+            </div>
+            <div class="section3-box-container">
+              <img src="./img/box3.jpg" alt="" class="section3-box" />
+              <div class="section3-box-item">
+                <p class="section3-box-item-p">Дизайнерські рішення</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -216,28 +231,28 @@
                 <img src="./img/img3.jpg" alt="" class="section4-card-img" />
                 <h5 class="section4-card-title">Михайло Єрмаков</h5>
                 <p class="section4-card-text">UI Designer</p>
-                <ul class="icon-card">
-                  <li class="icon-item-card">
+                <div class="icon-card">
+                  <a class="icon-item-card">
                     <svg>
                       <use href="./img/symbol-defs.svg#icon-instagram"></use>
                     </svg>
-                  </li>
-                  <li class="icon-item-card">
+                  </a>
+                  <a class="icon-item-card">
                     <svg>
                       <use href="./img/symbol-defs.svg#icon-twitter"></use>
                     </svg>
-                  </li>
-                  <li class="icon-item-card">
+                  </a>
+                  <a class="icon-item-card">
                     <svg>
                       <use href="./img/symbol-defs.svg#icon-facebook"></use>
                     </svg>
-                  </li>
-                  <li class="icon-item-card">
+                  </a>
+                  <a class="icon-item-card">
                     <svg>
                       <use href="./img/symbol-defs.svg#icon-linkedin2"></use>
                     </svg>
-                  </li>
-                </ul>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -246,38 +261,38 @@
       <section class="customers">
         <div class="container">
           <h2 class="customers-title">Постійні клієнти</h2>
-          <ul class="customers-img">
-            <li class="customers-icon">
+          <div class="customers-img">
+            <a class="customers-icon">
               <svg>
                 <use href="./img/symbol-defs.svg#icon-logo"></use>
               </svg>
-            </li>
-            <li class="customers-icon">
+            </a>
+            <a class="customers-icon">
               <svg>
                 <use href="./img/symbol-defs.svg#icon-logo1"></use>
               </svg>
-            </li>
-            <li class="customers-icon">
+            </a>
+            <a class="customers-icon">
               <svg>
                 <use href="./img/symbol-defs.svg#icon-logo2"></use>
               </svg>
-            </li>
-            <li class="customers-icon">
+            </a>
+            <a class="customers-icon">
               <svg>
                 <use href="./img/symbol-defs.svg#icon-logo3"></use>
               </svg>
-            </li>
-            <li class="customers-icon">
+            </a>
+            <a class="customers-icon">
               <svg>
                 <use href="./img/symbol-defs.svg#icon-logo4"></use>
               </svg>
-            </li>
-            <li class="customers-icon">
+            </a>
+            <a class="customers-icon">
               <svg>
                 <use href="./img/symbol-defs.svg#icon-logo5"></use>
               </svg>
-            </li>
-          </ul>
+            </a>
+          </div>
         </div>
       </section>
     </main>
@@ -305,28 +320,24 @@
           </div>
           <div class="icon-container">
             <h4 class="icon-title">приєднуйтесь</h4>
-            <ul class="icon">
-              <li class="icon-item">
-                <svg>
-                  <use href="./img/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </li>
-              <li class="icon-item">
-                <svg>
-                  <use href="./img/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </li>
-              <li class="icon-item">
-                <svg>
-                  <use href="./img/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </li>
-              <li class="icon-item">
-                <svg>
-                  <use href="./img/symbol-defs.svg#icon-linkedin2"></use>
-                </svg>
-              </li>
-            </ul>
+            <div class="icon">
+              <a class="icon-item" href="#"
+                ><svg>
+                  <use href="./img/symbol-defs.svg#icon-instagram"></use></svg
+              ></a>
+              <a class="icon-item" href="#"
+                ><svg>
+                  <use href="./img/symbol-defs.svg#icon-twitter"></use></svg
+              ></a>
+              <a class="icon-item" href="#"
+                ><svg>
+                  <use href="./img/symbol-defs.svg#icon-facebook"></use></svg
+              ></a>
+              <a class="icon-item" href="#"
+                ><svg>
+                  <use href="./img/symbol-defs.svg#icon-linkedin2"></use></svg
+              ></a>
+            </div>
           </div>
         </div>
       </div>
