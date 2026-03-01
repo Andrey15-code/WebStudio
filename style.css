@@ -2,6 +2,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+svg {
+  display: block;
+}
+
 .container {
   width: 1170px;
   height: 100%;
@@ -233,7 +237,7 @@ body {
   line-height: 24px;
 }
 
-.model-text-link {
+.modal-text-link {
   color: #2196f3 !important;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
@@ -242,34 +246,34 @@ body {
   text-decoration: underline;
 }
 
-.model-checkbox {
+.modal-checkbox {
   width: 16px;
   height: 15px;
   border: 2px solid black;
   accent-color: #2196f3;
 }
 
-.model-checkbox {
+.modal-checkbox {
   appearance: none;
   -webkit-appearance: none;
   width: 16px;
   height: 15px;
-  border: 3px solid black;
+  border: 2px solid black;
   border-radius: 3px;
   cursor: pointer;
   position: relative;
 }
 
-.model-checkbox:checked {
+.modal-checkbox:checked {
   background-color: #2196f3;
   border-color: #2196f3;
 }
 
-.model-checkbox:checked::after {
+.modal-checkbox:checked::after {
   content: "";
   position: absolute;
   left: 4px;
-  top: 1px;
+  top: 0px;
   width: 4px;
   height: 6px;
   border: solid white;
@@ -281,6 +285,35 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  align-items: center;
+}
+
+.cross > svg {
+  width: 11px;
+  height: 11px;
+  fill: #000000;
+  transition: fill 0.2s ease;
+}
+
+.cross {
+  border: 1px solid #00000010;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+
+  transition: border-color 0.18s ease, background 0.18s ease;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.cross:hover {
+  color: #2196f3;
+  border-color: #2196f3;
+}
+
+.cross:hover > svg{
+  fill: #2196f3;
 }
 
 .form-item {
@@ -301,6 +334,8 @@ body {
   font-size: 16px;
   line-height: 0.53;
   cursor: pointer;
+
+  box-shadow: 0px 15px 12px -16px #000000;
 }
 
 .modal-close:hover {
@@ -312,6 +347,64 @@ body {
   align-items: center;
   gap: 8.38px;
   margin: 25px 0 25px 0;
+}
+
+.form-input > input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid #21212120;
+  padding-left: 42px;
+  border-radius: 4px;
+}
+
+#comment {
+  width: 448px;
+  height: 120px;
+  border: 1px solid #21212120;
+  padding: 12px 16px 12px 16px;
+  text-align: left;
+  border-radius: 4px;
+}
+
+#comment:focus {
+  border-color: #2196f3;
+}
+
+.form-input > svg {
+  width: 15px;
+  height: 12px;
+  position: absolute;
+  left: 15px;
+  top: 14px;
+}
+
+.form-input {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.modal-form-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: #757575;
+  font-weight: 400;
+}
+
+.modal-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #757575;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+input:focus {
+  border-color: #2196f3;
+}
+
+.form-input:focus-within svg {
+  fill: #2196f3;
 }
 
 /* друга секція */
@@ -606,7 +699,7 @@ body {
 .icon-container {
   display: flex;
   flex-direction: column;
-  margin: 72px auto 0 70px;
+  margin: 72px 93px 0 70px;
 }
 
 .icon {
@@ -683,4 +776,65 @@ body {
 .customers-icon > svg:hover {
   fill: #2196f3;
   border: 2px solid #2196f3;
+}
+
+.form-footer-title {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.form-footer-input {
+  padding: 15px;
+  background: none;
+  border: 1px solid #ffffff30 ;
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  color: #2196f3;
+}
+
+.form-footer-input:focus {
+  border-color: #2196f3;
+}
+
+.form-footer-btn {
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  display: flex;
+  color: #ffffff;
+  line-height: 0.53;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background: #2196f3;
+  border-radius: 4px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-footer-btn > svg {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  margin-left: 10px;
+}
+
+.form-footer-btn:hover {
+  background-color: #1976d2;
+}
+
+.form-footer {
+  display: flex;
+}
+
+.form-footer-container {
+  margin: 72px 0 0 0 ;
 }
