@@ -48,6 +48,13 @@ body {
   display: flex;
 }
 
+.nav-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
 .nav-list {
   display: flex;
   align-items: center;
@@ -60,6 +67,25 @@ body {
   font-size: 14px;
   font-weight: 500;
   color: black;
+  transition: color 250ms ease;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -32px;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 4px;
+  transform: scaleX(0);
+  transition: transform 250ms ease;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
 }
 
 .nav-link:hover {
@@ -74,7 +100,7 @@ body {
   text-align: center;
   flex-direction: column;
   flex-wrap: wrap;
-  margin:  0  auto;
+  margin: 0 auto;
 }
 
 .info-link {
@@ -91,6 +117,21 @@ body {
 
 .info-link:hover {
   color: #2196f3;
+}
+
+.info-link:hover > svg {
+  fill: #2196f3;
+}
+
+.info-link > svg {
+  width: 10px;
+  height: 16px;
+  fill: #757575;
+}
+
+.info-link:nth-child(1) > svg {
+  width: 16px;
+  height: 12px;
 }
 
 /* перша секція */
@@ -135,6 +176,142 @@ body {
   font-weight: 700;
   border-radius: 5px;
   font-size: 16px;
+}
+
+.section1-button:hover {
+  background-color: #1976d2;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+  display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.modal {
+  width: 528px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding: 40px;
+}
+
+.title-modal {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #212121;
+  font-weight: 700;
+}
+
+.model-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #757575;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.model-text-link {
+  color: #2196f3 !important;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  line-height: 24px;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.model-checkbox {
+  width: 16px;
+  height: 15px;
+  border: 2px solid black;
+  accent-color: #2196f3;
+}
+
+.model-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 15px;
+  border: 3px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+}
+
+.model-checkbox:checked {
+  background-color: #2196f3;
+  border-color: #2196f3;
+}
+
+.model-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 4px;
+  height: 6px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.form-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.modal-close {
+  width: 200px;
+  height: 50px;
+  background-color: #2196f3;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 0.53;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  background-color: #1976d2;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 8.38px;
+  margin: 25px 0 25px 0;
 }
 
 /* друга секція */
@@ -291,7 +468,6 @@ body {
   text-transform: uppercase;
 }
 
-
 /* Четверта секція */
 .section4 {
   font-family: "Roboto", sans-serif;
@@ -372,7 +548,6 @@ body {
   padding: 12px;
   justify-content: center;
   align-items: center;
-
 }
 
 /* підвал */
@@ -447,7 +622,7 @@ body {
 }
 
 .icon-title {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif !important;
   font-size: 14px;
   color: #ffffff;
   font-weight: 700;
@@ -491,7 +666,7 @@ body {
 
 .customers-img {
   display: flex;
-  margin: 0  0 94px 0;
+  margin: 0 0 94px 0;
   justify-content: space-between;
 }
 

@@ -3,16 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./normalize.css" />
-    <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="img/fonts/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./style.css" />
     <title>WebStudio</title>
   </head>
 
@@ -30,22 +28,29 @@
               <ul class="nav-list">
                 <li class="nav-item">
                   <a href="./index.html" class="nav-link">Студія</a>
+
                 </li>
                 <li class="nav-item">
                   <a href="./portfolio.html" class="nav-link">Портфоліо</a>
+
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link">Контакти</a>
+
                 </li>
               </ul>
             </nav>
 
             <div class="info">
               <a href="mailto:info@devstudio.com" class="info-link">
-                <i class="icon-envelope-hover"></i> info@devstudio.com</a
+                <svg id="1">
+                      <use href="./img/symbol-defs.svg#icon-envelope-hover"></use>
+                    </svg> info@devstudio.com</a
               >
               <a href="tel:+380961111111" class="info-link">
-                <i class="icon-smartphone"></i> +38 096 111 11 11</a
+                <svg>
+                      <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+                    </svg> +38 096 111 11 11</a
               >
             </div>
           </div>
@@ -62,9 +67,78 @@
               ЕФЕКТИВНІ РІШЕННЯ ДЛЯ<br />
               ВАШОГО БІЗНЕСУ
             </h1>
-            <button class="section1-button" type="submit">
+            <button class="section1-button" type="submit" data-modal-open>
               Замовити послугу
             </button>
+            <div class="backdrop is-hidden" data-modal>
+              <div class="modal">
+                <h3 class="title-modal">
+                  Залиште свої дані, ми вам передзвонимо
+                </h3>
+                <form class="form-modal">
+                  <div class="form-item">
+                    <label for="name" class="model-form-title">Ім'я</label>
+                    <input
+                      id="name"
+                      name="name"
+                      type="text"
+                      class="model-form-pole"
+                      required
+                    />
+                  </div>
+                  <div class="form-item">
+                    <label for="phone" class="model-form-title">Телефон</label>
+                    <input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      class="model-form-pole"
+                      required
+                    />
+                  </div>
+                  <div class="form-item">
+                    <label for="email" class="model-form-title">Пошта</label>
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      class="model-form-pole"
+                      required
+                    />
+                  </div>
+                  <div class="form-item">
+                    <label for="comment" class="model-form-title"
+                      >Коментар</label
+                    >
+                    <input
+                      id="comment"
+                      name="comment"
+                      type="text"
+                      class="model-form-pole"
+                      placeholder="Введіть текст"
+                    />
+                  </div>
+                </form>
+                <div class="checkbox-container">
+                  <input
+                    id="agree"
+                    name="agree"
+                    type="checkbox"
+                    class="model-checkbox"
+                    required
+                  />
+                  <label for="agree" class="model-text"
+                    >Погоджуюся з розсилкою та приймаю
+                    <a href="#" class="model-text-link"
+                      >Умови договору</a
+                    ></label
+                  >
+                </div>
+                <button class="modal-close" type="submit" data-modal-close>
+                  Відправити
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -342,5 +416,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/modal.js"></script>
   </body>
 </html>
