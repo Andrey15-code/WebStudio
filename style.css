@@ -301,7 +301,9 @@ svg {
   border-radius: 50%;
   background-color: #ffffff;
 
-  transition: border-color 0.18s ease, background 0.18s ease;
+  transition:
+    border-color 0.18s ease,
+    background 0.18s ease;
   position: absolute;
   right: 10px;
   top: 10px;
@@ -312,7 +314,7 @@ svg {
   border-color: #2196f3;
 }
 
-.cross:hover > svg{
+.cross:hover > svg {
   fill: #2196f3;
 }
 
@@ -370,6 +372,10 @@ svg {
   border-color: #2196f3;
 }
 
+#comment:hover {
+  border: 1px solid #2196f3;
+}
+
 .form-input > svg {
   width: 15px;
   height: 12px;
@@ -407,6 +413,9 @@ input:focus {
   fill: #2196f3;
 }
 
+.form-input > input:hover {
+  border: 1px solid #2196f3;
+}
 /* друга секція */
 
 .section2-img {
@@ -791,7 +800,7 @@ input:focus {
 .form-footer-input {
   padding: 15px;
   background: none;
-  border: 1px solid #ffffff30 ;
+  border: 1px solid #ffffff30;
   border-radius: 4px;
   width: 358px;
   height: 50px;
@@ -800,6 +809,10 @@ input:focus {
 
 .form-footer-input:focus {
   border-color: #2196f3;
+}
+
+.form-footer-input:hover {
+  border: 1px solid #2196f3;
 }
 
 .form-footer-btn {
@@ -836,5 +849,5 @@ input:focus {
 }
 
 .form-footer-container {
-  margin: 72px 0 0 0 ;
+  margin: 72px 0 0 0;
 }
