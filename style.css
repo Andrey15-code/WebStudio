@@ -88,7 +88,7 @@ svg {
   height: 4px;
   background-color: #2196f3;
   border-radius: 4px;
-  transition: transform 250ms ease;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover {
@@ -116,6 +116,7 @@ svg {
   gap: 10px;
   flex-wrap: wrap;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .info-link:hover {
@@ -130,6 +131,7 @@ svg {
   width: 10px;
   height: 16px;
   fill: #757575;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .info-link:nth-child(1) > svg {
@@ -179,6 +181,7 @@ svg {
   font-weight: 700;
   border-radius: 5px;
   font-size: 16px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section1-button:hover {
@@ -301,8 +304,8 @@ svg {
   background-color: #ffffff;
 
   transition:
-    border-color 0.18s ease,
-    background 0.18s ease;
+    border-color 250ms ease,
+    background 250ms ease;
   position: absolute;
   right: 10px;
   top: 10px;
@@ -336,6 +339,8 @@ svg {
   line-height: 0.53;
   cursor: pointer;
 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   box-shadow: 0px 15px 12px -16px #000000;
 }
 
@@ -365,6 +370,8 @@ svg {
   padding: 12px 16px 12px 16px;
   text-align: left;
   border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #comment:focus {
@@ -372,7 +379,7 @@ svg {
 }
 
 #comment:hover {
-  border: 1px solid #2196f3;
+  border: solid #2196f3;
 }
 
 .form-input > svg {
@@ -402,6 +409,8 @@ svg {
   color: #757575;
   font-weight: 400;
   line-height: 24px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 input:focus {
@@ -410,6 +419,8 @@ input:focus {
 
 .form-input:focus-within svg {
   fill: #2196f3;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input > input:hover {
@@ -432,7 +443,7 @@ input:focus {
   align-items: center;
 }
 
-.section2-feature:nth-child(1):before {
+.section2-feature:nth-child(1)::before {
   content: url("./img/antenna1.png");
   display: flex;
   justify-content: center;
@@ -443,7 +454,7 @@ input:focus {
 
   border-radius: 3px;
 }
-.section2-feature:nth-child(2):before {
+.section2-feature:nth-child(2)::before {
   content: url("./img/clock1.png");
   display: flex;
   justify-content: center;
@@ -455,7 +466,7 @@ input:focus {
   border-radius: 3px;
 }
 
-.section2-feature:nth-child(3):before {
+.section2-feature:nth-child(3)::before {
   content: url("./img/diagram1.png");
   display: flex;
   justify-content: center;
@@ -467,7 +478,7 @@ input:focus {
   border-radius: 3px;
 }
 
-.section2-feature:nth-child(4):before {
+.section2-feature:nth-child(4)::before {
   content: url("./img/astronaut1.png");
   display: flex;
   justify-content: center;
@@ -604,6 +615,12 @@ input:focus {
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
   box-shadow: 0px 3px 2px -1px rgba(196, 196, 196, 0.73);
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section4-card:hover {
+  box-shadow: 0px 5px 2px -1px rgba(196, 196, 196, 0.1);
 }
 
 .section4-card-title {
@@ -619,10 +636,6 @@ input:focus {
   color: #757575;
 }
 
-.section4-card:hover {
-  box-shadow: 0px 5px 2px -1px rgba(196, 196, 196, 0.1);
-}
-
 .icon-card {
   display: flex;
   gap: 10px;
@@ -634,6 +647,7 @@ input:focus {
   height: 20px;
   fill: #afb1b8;
   display: block;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-item-card:hover > svg {
@@ -649,6 +663,8 @@ input:focus {
   padding: 12px;
   justify-content: center;
   align-items: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* підвал */
@@ -677,6 +693,8 @@ input:focus {
   color: #757575;
   font-weight: 500;
   display: block;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-info-link:hover {
@@ -720,6 +738,8 @@ input:focus {
   height: 20px;
   fill: #ffffff;
   display: block;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-title {
@@ -738,6 +758,8 @@ input:focus {
   padding: 12px;
   justify-content: center;
   align-items: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-item > svg:hover {
@@ -779,6 +801,8 @@ input:focus {
   height: 92px;
   display: block;
   padding: 16px 32px 16px 32px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-icon > svg:hover {
@@ -804,10 +828,12 @@ input:focus {
   width: 358px;
   height: 50px;
   color: #2196f3;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-footer-input:focus {
-  border-color: #2196f3;
+  border: 1px #2196f3;
 }
 
 .form-footer-input:hover {
@@ -830,6 +856,8 @@ input:focus {
   border: none;
   justify-content: center;
   align-items: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-footer-btn > svg {
