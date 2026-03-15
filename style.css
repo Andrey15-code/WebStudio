@@ -189,6 +189,8 @@ svg {
 }
 
 .backdrop {
+  justify-items: center;
+  align-content: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -196,10 +198,16 @@ svg {
   bottom: 0;
 
   background-color: rgba(0, 0, 0, 0.2);
+
+  transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .no-scroll {
@@ -209,10 +217,10 @@ svg {
 .modal {
   width: 528px;
 
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 
   display: flex;
   justify-content: center;
@@ -222,6 +230,13 @@ svg {
   border-radius: 4px;
   background-color: #ffffff;
   padding: 40px;
+
+  transform: scale(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop:not(.is-hidden) .modal {
+  transform: scale(1);
 }
 
 .title-modal {
@@ -802,7 +817,9 @@ input:focus {
   display: block;
   padding: 16px 32px 16px 32px;
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-icon > svg:hover {
